@@ -29,6 +29,11 @@ body{
     background-color: var(--secundary-light);
 }
 
+#button-container{
+    display: flex;
+    justify-content: center;
+}
+
 #button-container button{
     padding: 10px 20px;
     margin: 5px;
@@ -49,4 +54,21 @@ body{
     border: 1px solid var(--primary-dark);
     border-radius: 5px;
     background-color: var(--primary-light)
+}
+
+#rodape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    color: var(--primary-dark);
+}
+
+#rodape a{
+    text-decoration: none;
+    color: var(--primary-dark)
 }

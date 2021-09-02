@@ -4,7 +4,6 @@ const eraserBtn = document.querySelector('#eraserBtn');
 const clearBtn = document.querySelector('#clearBtn');
 const sizeInput = document.querySelector('#sizeInput');
 let pencilColor = 'var(--primary-dark)';
-
 // Create Grid
 
 function createGrid(num){
@@ -40,6 +39,15 @@ function clearGrid(){
     let gridItem = gridContainer.children;
     for(let i = 0; i < gridItem.length; i++){
         gridItem[i].style.backgroundColor = 'var(--secundary-light)'
+    }
+}
+
+// Delete grid
+
+function deleteGrid(){
+    let gridItem = gridContainer.children;
+    for(let i = 0; i <= gridItem.length; i++){
+        gridItem[i].remove()
     }
 }
 
